@@ -1,1 +1,15 @@
-<itg-vehicle></itg-vehicle>
+
+<ul class="itg-layout">
+  <li *ngFor="let item of vehicles"> 
+
+    <div class= "cardHolder">
+      
+      <img [attr.src]="'assets'+item.media[0].url" width="100%" />
+       <div class = "boldFont"> VEHICLE NAME </div>
+       <div> From {{item.price}} </div>
+      <div class = "description "> {{item.description}}</div>
+    </div>
+     </li>
+  
+</ul>
+
